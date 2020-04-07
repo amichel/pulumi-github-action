@@ -1,0 +1,5 @@
+name: "Pulumi-Stack"
+description: "Pulumi Stack with output support to GithubAction Output"
+runs:
+  using: "docker"
+  image: "Dockerfile"
