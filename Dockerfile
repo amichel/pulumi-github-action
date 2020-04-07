@@ -2,6 +2,9 @@ ARG PULUMI_VERSION=latest
 FROM pulumi/actions:${PULUMI_VERSION}
 
 LABEL "com.github.actions.name"="Pulumi Stack"
+LABEL "com.github.actions.description"="Deploy apps and infra to your favorite cloud!"
+LABEL "com.github.actions.icon"="cloud-lightning"
+LABEL "com.github.actions.color"="purple"
 
 # Copy the entrypoint script.
 COPY ./entrypoint.sh /usr/bin/pulumi-action
